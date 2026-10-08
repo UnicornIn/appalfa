@@ -1,0 +1,108 @@
+/* "Ruta ALFA — tu lectura" (ejemplo de entregable): el mismo informe, con escala más compacta */
+.page-reading {
+  --max: 1020px;
+  --pad: clamp(20px, 5vw, 56px);
+  line-height: 1.68;
+}
+.page-reading h1 {
+  font-size: clamp(24px, 4.2vw, 44px);
+  letter-spacing: 0.2em;
+  line-height: 1.14;
+}
+.page-reading h2 {
+  font-size: clamp(15px, 1.8vw, 19px);
+  line-height: 1.14;
+}
+.page-reading h3 {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  line-height: 1.14;
+}
+.page-reading .eyebrow {
+  font-size: 10.5px;
+  letter-spacing: 0.34em;
+  margin-bottom: 14px;
+}
+.page-reading .btn {
+  padding: 16px 26px;
+  border-radius: 0;
+}
+.page-reading .report {
+  padding-top: clamp(28px, 5vw, 54px);
+}
+.page-reading .res-hero {
+  padding-top: 0;
+}
+.page-reading .res-hero h1 {
+  font-size: clamp(24px, 4.2vw, 44px);
+  margin-bottom: 0;
+}
+.page-reading .report-top {
+  margin-bottom: clamp(26px, 5vw, 44px);
+}
+.page-reading .report-blocks {
+  margin-top: 46px;
+}
+.page-reading .next-step {
+  margin-top: 40px;
+  border-color: var(--plata);
+  padding: clamp(24px, 4vw, 40px);
+}
+.page-reading .fchip {
+  letter-spacing: 0.06em;
+  border-radius: 0;
+}
+
+.demo {
+  border-bottom: 1px solid var(--linea);
+  background: rgba(13, 13, 13, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(12px);
+}
+.demo .wrap {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.demo .t {
+  font-size: 10px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--humo);
+}
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.tab {
+  font-family: inherit;
+  font-size: 11.5px;
+  letter-spacing: 0.06em;
+  color: var(--plata);
+  background: transparent;
+  border: 1px solid var(--linea);
+  padding: 9px 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.tab:hover {
+  border-color: var(--plata);
+  color: #fff;
+}
+.tab[aria-pressed='true'] {
+  background: var(--plata);
+  color: var(--negro);
+  border-color: var(--plata);
+}
+@media print {
+  .demo {
+    display: none;
+  }
+}
